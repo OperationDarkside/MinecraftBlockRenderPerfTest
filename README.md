@@ -8,6 +8,7 @@ As a performance test for block rendering each tests tries to render 50,000 bloc
 2. Like Nr 1 but with Geometry Shader -> 32ms frametime
     - each draw call only sends 8 vertices (4 x 2)
     - the geometry shader creates the block from the 8 vertices
-3. Instanced drawing -> 8ms frametime (absolute minimum, less was not possible on my machine)
+3. Like Nr 2 but only 1 vertex per draw call -> 30ms frametime
+4. Instanced drawing -> 8ms frametime (absolute minimum, less was not possible on my machine)
     - all model-matrices are stored in a separate array buffer
     - each instance call only changes the model matrix and draws the same triangles
