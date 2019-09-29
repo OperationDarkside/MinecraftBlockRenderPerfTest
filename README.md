@@ -12,3 +12,5 @@ As a performance test for block rendering each tests tries to render 50,000 bloc
 4. Instanced drawing -> 8ms frametime (absolute minimum, less was not possible on my machine)
     - all model-matrices are stored in a separate array buffer
     - each instance call only changes the model matrix and draws the same triangles
+5. Rendering ChunkBlocks (16 x 16 x 16)
+    - 300 ChunkBlocks 8ms frametime
